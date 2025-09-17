@@ -4,8 +4,8 @@ using UnityEngine;
 public class DamagePopup : MonoBehaviour
 {
     [SerializeField] TextMeshPro damageText;
-    [SerializeField] float lifetime = 1f;
-    [SerializeField] float floatHeight = 2f; 
+    [SerializeField] float lifetime;
+    [SerializeField] float floatHeight;
     [SerializeField] AnimationCurve scaleCurve;
     [SerializeField] AnimationCurve alphaCurve;
     [SerializeField] AnimationCurve moveCurve;
@@ -19,13 +19,11 @@ public class DamagePopup : MonoBehaviour
     {
         damageText.text = damage.ToString();
         damageText.color = color;
-        originalColor = color;
-        
-        startPosition = transform.position;
-        
-        randomOffset = new Vector3(Random.Range(-0.3f, 0.3f), 0f, 0f);
         
         timer = 0f;
+        startPosition = transform.position;
+        randomOffset = new Vector3(Random.Range(-0.3f, 0.3f), 0f, 0f);
+        originalColor = color;
     }
     
     void Update()

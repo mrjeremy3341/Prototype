@@ -25,11 +25,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        HandleMovement();
-    }
-
-    void HandleMovement()
-    {
         Vector2 targetVelocity = moveInput * moveSpeed;
         if(moveInput.magnitude > 0)
         {
