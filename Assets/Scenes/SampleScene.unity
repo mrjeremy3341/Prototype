@@ -406,8 +406,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2160c6ad6b8331438d081b7a82f66dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 1, y: 0}
-  size: {x: 0.5, y: 0.5}
+  showDebug: 1
+  hurtLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &339905283
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,12 +799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85a1557df2a6cf340a89fc9752670e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodLabel: {fileID: 1130998009}
-  stoneLabel: {fileID: 81999611}
-  metalLabel: {fileID: 1863514883}
-  currentWood: 0
-  currentStone: 0
-  currentMetal: 0
 --- !u!1 &648052621
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ed3ae39f7e4cb4ea86b7e9aee90ea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitbox: {fileID: 219288104}
+  hitbox: {fileID: 219288105}
+  pc: {fileID: 648052625}
 --- !u!1 &1053445039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,8 +1292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2160c6ad6b8331438d081b7a82f66dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0}
-  size: {x: 0, y: 0}
+  showDebug: 0
+  hurtLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1777844961
 GameObject:
   m_ObjectHideFlags: 0

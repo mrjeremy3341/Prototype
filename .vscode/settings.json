@@ -1,7 +1,10 @@
 {
     "files.exclude": {
-        "**/.DS_Store": true,
         "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
         "**/.vs": true,
         "**/.gitmodules": true,
         "**/.vsconfig": true,
@@ -54,7 +57,14 @@
         "ProjectSettings/": true,
         "UserSettings/": true,
         "temp/": true,
-        "Temp/": true
+        "Temp/": true,
+        "**/.gitignore": true,
+        ".gitignore": true,
+        "**/Assembly-CSharp.csproj": true,
+        "Assembly-CSharp.csproj": true,
+        "**/Prototype.sln": true,
+        "Prototype.sln": true
     },
-    "dotnet.defaultSolution": "Prototype.sln"
+    "dotnet.defaultSolution": "Prototype.sln",
+    "explorerExclude.backup": {}
 }

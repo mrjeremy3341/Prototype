@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     Vector2 moveInput;
     Vector2 currentVelocity;
+    Vector2 attackVelocity;
 
     Rigidbody2D rb;
 
@@ -34,6 +35,13 @@ public class PlayerController : MonoBehaviour
         {
             currentVelocity = Vector2.Lerp(currentVelocity, Vector2.zero, deceleration * Time.deltaTime);
         }
-        rb.velocity = currentVelocity;
+
+        attackVelocity = Vector2.Lerp(attackVelocity, Vector2.zero, 5f * Time.deltaTime);
+        rb.velocity = currentVelocity + attackVelocity;
+    }
+
+    public void AttackMomentum(Vector2 momentum)
+    {
+        attackVelocity += momentum;
     }
 }
